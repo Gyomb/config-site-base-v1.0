@@ -24,3 +24,22 @@
 // @import "modules/module-filtres";
 @import "modules/module-grille-responsive";
 @import "modules/module-maps";
+
+use[*|href$="#twitter"]{
+	$twitter-c: #00aced;
+	fill:$twitter-c;
+	transform-origin: 50% 50%;
+	transition: 0.5s;
+	&:hover{
+		fill:lighten($twitter-c, 25%);
+		transform: rotate(10deg);
+	}
+}
+use{
+	&[*|href$="#heart"],&[*|href$="#spot"]{
+		fill:#EA0000;
+	}
+}
+use[*|href*="#facebook"]{
+	fill:#3B5998;
+}

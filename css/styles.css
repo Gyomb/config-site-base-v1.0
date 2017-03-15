@@ -1439,3 +1439,17 @@ input[type="text"], textarea {
 
 #map .map-close a:hover {
   opacity: 1; }
+
+use[*|href$="#twitter"] {
+  fill: #00aced;
+  transform-origin: 50% 50%;
+  transition: 0.5s; }
+  use[*|href$="#twitter"]:hover {
+    fill: #6ed7ff;
+    transform: rotate(10deg); }
+
+use[*|href$="#heart"], use[*|href$="#spot"] {
+  fill: #EA0000; }
+
+use[*|href*="#facebook"] {
+  fill: #3B5998; }
