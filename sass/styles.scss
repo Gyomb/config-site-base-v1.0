@@ -1,4 +1,4 @@
-@import "variables";
+@import "base/variables";
 @import "mixins/mixin-base";
 @import "base/meyer-reset";
 @import "base/base";
@@ -24,8 +24,3 @@
 // @import "modules/module-filtres";
 @import "modules/module-grille-responsive";
 @import "modules/module-maps";
-
-@import "responsive";
-
-
-
