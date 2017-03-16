@@ -1,0 +1,127 @@
+
+/*------------------------------------*\
+    $ PERSONNALISATION
+\*------------------------------------*/
+/*------------------------------------*\
+    $ taille du container du site
+\*------------------------------------*/
+
+// @include phone{.container{width:395px;}}
+// @include tablet{.container{width:775px;}}
+// @include large-desktop{.container{width:975px;}}
+
+
+
+@mixin micons {font-family: "icomoon" !important;
+  text-indent: 0;
+  text-transform: none;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+[class^="icon-"], [class*=" icon-"] {
+@include micons;
+}
+
+
+// =============================================================================
+// Media Queries ( responsive web design )
+// =============================================================================
+
+@mixin small-phone {
+    @media (max-width: #{$phone-portrait - 1px}) {
+        @content;
+    }
+}
+
+
+@mixin phone {
+    @media (max-width: #{$phone-lanscape - 1px}) {
+        @content;
+    }
+}
+
+@mixin phone-large {
+    @media (min-width: #{$phone-lanscape}) and (max-width: #{$tablet-portrait - 1px}) {
+        @content;
+    }
+}
+
+
+@mixin tablet {
+    @media (min-width: #{$tablet-portrait}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+
+@mixin large-desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    $ LES PICTOS DU MENU
+\*------------------------------------*/
+@mixin picto-menus($ico) {border:0; line-height: 0;
+            >a{text-indent:-3000px; margin-top: 0; width: 32px; height: 32px; background-color: $coul-une; padding: 0;
+                &::after{width: 0}
+                span{position: relative; display: block; width: 32px; height: 32px;
+                  &::after{text-indent:0;@include micons; font-size: 1.2em; content: $ico; color:#fff;position: absolute; left: 50%; top: 50%; transform :translate(-50%,-50%); }
+                }
+                &:hover, &:focus{ background-color: $coul-deux;
+                  &::before{width: 0;}
+
+                }
+            }
+}
+
+
+
+// =============================================================================
+// CSS Animation
+// =============================================================================
+
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

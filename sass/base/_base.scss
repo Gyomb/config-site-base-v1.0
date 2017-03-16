@@ -1,0 +1,127 @@
+    body{font-family: $font-une; font-size: 1.6rem;}
+
+    h2{    color: #cf691e;font-size: 1.5em; font-weight: normal; margin-top: 10px;}
+
+    h3{font-size: 1.3rem;}
+    h4{ color: $coul-quatre; font-size: 1.2rem}
+
+    p {
+        padding: 0;
+        font-family: $font-deux;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: $coul-gris-regular;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align:justify;
+    }
+    p+ul{margin-top: -5px;}
+
+    img {
+        height: auto;
+        /*max-width: 100%;*/
+    }
+    strong, label{font-family: $font-trois; font-weight: normal;}
+    label{text-align:right; padding-right: 10px;}
+    /*Ajout Effet css3 sur les boutons*/
+    a {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        transition:all .3s;
+        color:$coul-links;
+
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      color:darken($coul-links,25%);
+  }
+  a.btn{color: $coul-gris-regular; padding: 0;
+    &:hover{color: #000; text-decoration:underline;}
+  }
+
+// Les listes à puce li
+.contenu {
+    ul{padding-left: 15px;}
+    li{list-style:none; font-family: $font-deux; line-height: 1.4em; position: relative;
+    &::after{position: absolute; @include micons; content:"\e902"; left: -15px; top:8px; color: $coul-une;  transform: rotate(-90deg); font-size: 0.6rem; }
+    }
+}
+
+
+
+
+/* Met en évidence les citations */
+blockquote {
+  margin: .75em 0 .75em 0;
+  padding: 0 0 0 10px;
+  border-left: solid 4px $coul-deux;
+  line-height: 1.4;
+  footer {color: $coul-une; font-family: $font-deux;
+}
+}
+
+ input, button, select, textarea{border:1px solid #ccc; transition:all 0.3s; padding:5px;
+        &:focus{ border:1px solid $coul-deux; box-shadow:none; background-color: #ebfbff }
+    }
+
+em{font-style: italic;}
+
+
+/*  ################################################################
+    MODIFICATIONS Bouton - LIENS
+    ################################################################# */
+
+     .btn.btn-base{border-radius:0; background-color: $coul-deux; border:0; padding: 12px;
+        &:hover{background-color: $coul-une; }
+    }
+    .btn-base {
+      color: #fff;
+      background-color: $coul-textes2;
+      // border-color: $coul-textes2;
+      margin: 4px;
+    }
+    .btn-base:hover,
+    .btn-base:focus,
+    .btn-base:active,
+    .btn-base.active,
+    {
+      color: #fff;
+      background-color: #00b3fe;
+      border: 0;
+    }
+
+    .read-more{text-decoration: underline; display: inline-block; color: $coul-une; font-family: $font-trois; position: relative; margin-top: 5px;
+        &::after{content:"\e904"; position: absolute; right: -18px; top: 4px; font-size: 1.2rem; @include micons;}
+
+    }
+
+
+/*------------------------------------*\
+    $ LES FORMULAIRES
+    \*------------------------------------*/
+
+    label.input, label.textarea,label.selectM, label.check {width: 250px; vertical-align:top;}
+    input[type="checkbox"]{margin-right: 5px;}
+    input[type="text"], textarea{width: 300px;}
+
+    .nav-pills {
+        .dropdown-menu{box-shadow:none; border-radius:0; margin-top: 0; margin-left: 8px; padding: 0;
+            >li { border-bottom:1px solid $coul-gris-regular;
+                &:last-child{border-bottom:0;}
+                > a{text-transform: none; padding: 10px; text-align:center; font-size: 1.4rem;}
+        }
+        }
+        > li > a{border-radius: 0; text-transform: uppercase;}
+    }
+
+/*------------------------------------*\
+    $ LES NO GUTTER BOOTSTRAP
+\*------------------------------------*/
+
+.no-gutter > [class^="col-md"] {margin-left: 0; margin-right: 0; padding: 0;}
+
+
+
+
