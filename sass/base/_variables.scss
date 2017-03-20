@@ -1,0 +1,162 @@
+
+
+/*------------------------------------*\
+    $ VARIABLES DE BASE
+\*------------------------------------*/
+    $menu-width : 260px !default;
+    $bg-site : #e5dfd1 !default;
+    $bg-header : #fff !default;
+    $coul-gris-light: #7e7e7e !default;
+    //bleu du logo
+    $coul-une : #38BED4  !default;
+    $coul-deux : #333 !default;
+    $coul-trois :#515151 !default;
+
+    $coul-une-light : #ffdd00 !default;
+    $coul-gris: #aaa !default;
+    $coul-gris-regular : #808080 !default;
+
+
+
+/*------------------------------------*\
+    $Variables grille responsives
+\*------------------------------------*/
+// Le break responsive
+    $phone-portrait : 480px !default;
+    $phone-lanscape : 768px !default;
+    $tablet-portrait : 992px !default;
+    $desktop : 1200px !default;
+
+    $columns: 12 !default;
+    $gutter: 20px !default;
+    $medium: $phone-lanscape !default;
+    $large: $desktop !default;
+    $small: $phone-portrait !default;
+
+
+
+    $coul-haut-menu : #D85D55 !default;
+    $coul-bas-menu : #8d4039 !default;
+
+
+
+
+
+
+
+    $coul-links : #38BED4 !default;
+
+    // violet
+
+    //bleu
+    $coul-quatre :#6fc9f6 !default;
+    // sous menu dropdown
+    $coul-cinq : #fbe36f !default;
+    //rouge
+    $coul-six: #b52449 !default;
+
+    $coul-textes: #333 !default;
+    $coul-textes2 : #384452 !default;
+    $coul-textes-menu : #fff !default;
+
+
+
+    $coul-texte-menu : $coul-textes !default;
+
+    $font-une : 'lato-light', Helvetica,arial,sans-serif !default;
+    $font-deux : 'pt_sans-web-regular', Helvetica,arial,sans-serif !default;
+    $font-trois : 'pt_sans-web-regular', Helvetica,arial,sans-serif !default;
+
+
+
+
+/*------------------------------------*\
+    $ LES FONTS
+\*------------------------------------*/
+
+
+
+@font-face {
+    font-family: 'lato-light';
+    src: url('./fonts/lato-light-webfont.eot');
+    src: url('./fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/lato-light-webfont.woff') format('woff'),
+         url('./fonts/lato-light-webfont.woff2') format('woff2'),
+         url('./fonts/lato-light-webfont.ttf') format('truetype'),
+         url('./fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt_sans-web-regular';
+    src: url('./fonts/pt_sans-web-regular-webfont.eot');
+    src: url('./fonts/pt_sans-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/pt_sans-web-regular-webfont.woff') format('woff'),
+         url('./fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+         url('./fonts/pt_sans-web-regular-webfont.ttf') format('truetype'),
+         url('./fonts/pt_sans-web-regular-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('./fonts/icomoon.eot?ghatp2');
+    src:    url('./fonts/icomoon.eot?ghatp2#iefix') format('embedded-opentype'),
+        url('./fonts/icomoon.ttf?ghatp2') format('truetype'),
+        url('./fonts/icomoon.woff?ghatp2') format('woff'),
+        url('./fonts/icomoon.svg?ghatp2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$pc-home : "";
+$pc-shop : "";
+ // Le slider
+$pc-fl-slide-left : "\e900";
+$pc-fl-slide-right : "\e901";
+$pc-fl-slide-bg : transparent;
+$pc-fl-slide-col : #fff;
+$pc-fl-col-textes1 : #000;
+$pc-fl-col-textes2 : #ccc;
+$pc-fl-bg-textes : #000;
+$pc-fl-bg-textes-opacity : 0;
+
+$pc-fl-scrollup : "\e902";
+$pc-phone : "";
+$pc-fl-slide-bas : "";
+$pc-local :"";
+$pc-mail :"";
+
+
+.icon-heart:before {
+  content: "\e900";
+}
+.icon-speech-bubbles:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-envelope:before {
+  content: "\e903";
+}
+.icon-pictos-icomoon_localise:before {
+  content: "\e904";
+}
+.icon-home:before {
+  content: "\e905";
+}
+.icon-spot:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-zoom:before {
+  content: "\e908";
+}
+

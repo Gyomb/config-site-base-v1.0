@@ -1,0 +1,50 @@
+#map {
+    background: rgba(0, 0, 0, 0) url("../images/ateliermaupoux-plan.jpg") no-repeat scroll center center;
+    cursor: pointer;
+    position: relative;
+}
+
+#map .map-hover {
+    background: #ffffff none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    transition: opacity 0.3s ease 0s;
+    width: 100%;
+}
+
+#map:hover .map-hover {
+    opacity: 0.3;
+}
+#map.map-active .map-hover {
+    opacity: 0;
+}
+#map #map-holder {
+    display: block;
+    height: 100px;
+    opacity: 0;
+    width: 100%;
+}
+
+
+#map .map-close {
+    display: none;
+    height: 16px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: -40px;
+}
+#map .map-close a {
+    background: rgba(0, 0, 0, 0) url("../images/icon-close-map.png") no-repeat scroll center center;
+    display: block;
+    height: 16px;
+    opacity: 0.4;
+    text-align: center;
+    width: 16px;
+}
+#map .map-close a:hover {
+    opacity: 1;
+}

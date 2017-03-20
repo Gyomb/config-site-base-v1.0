@@ -1,0 +1,55 @@
+
+.clearfix {@include clearfix;}
+
+/*------------------------------------*\
+    $ taille du container du site
+\*------------------------------------*/
+.container{margin: 0 auto;}
+@include small-phone{.container{width:450px;}}
+@include phone{.container{width:480px;}}
+@include phone-large{.container{width:768px;}}
+@include tablet{.container{width:992px;}}
+@include large-desktop{.container{width:1200px;}}
+
+.table{display: table}
+.table-cell{display: table-cell;}
+
+
+/*------------------------------------*\
+    $ ACCESSIBILITE
+\*------------------------------------*/
+.skiplink {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+:focus.skiplink {
+  // undo the hiding
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  clip: auto;
+  // some explicit visual styles
+  display: block;
+  background: #eee;
+  color: #000;
+  text-decoration: underline;
+  padding: 1em;
+}
+
+.lightbox1{position: relative; display: inline-block;
+
+    &::before{
+    content: "🔎"; position: absolute; right: 10px; top: 5px;
+
+
+    }
+
+}
