@@ -10,7 +10,7 @@ var svgSprite = require('gulp-svg-sprite');
 
 //////////// sass Tasks //////////////
 gulp.task('style', function(){
-  gulp.src('sass/style.scss')
+  gulp.src('sass/styles.scss')
       .pipe(sass())
       .pipe(autoprefixer(
         {
